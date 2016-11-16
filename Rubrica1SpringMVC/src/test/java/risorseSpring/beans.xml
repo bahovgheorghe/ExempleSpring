@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="Giorgio" class="it.alfasoft.gheorghe.rubrica.Rubrica">
+		<property name="voci">
+			<list>
+				<ref bean="contatoA" />
+				<ref bean="contatoB" />
+				<ref bean="contatoC" />
+			</list>
+		</property>
+	</bean>
+	<bean id="contatoA" class="it.alfasoft.gheorghe.rubrica.Voce">
+		<property name="cognome" value="Bahov"></property>
+		<property name="nome" value="Gheorghe"></property>
+		<property name="cell" value="21542"></property>
+	</bean>
+	<bean id="contatoB" class="it.alfasoft.gheorghe.rubrica.Voce">
+		<property name="cognome" value="Rossi"></property>
+		<property name="nome" value="Mario"></property>
+		<property name="cell" value="254689"></property>
+	</bean>
+	<bean id="contatoC" class="it.alfasoft.gheorghe.rubrica.Voce">
+		<property name="cognome" value="Verdi"></property>
+		<property name="nome" value="Paolo"></property>
+		<property name="cell" value="254896"></property>
+	</bean>
+</beans>   
